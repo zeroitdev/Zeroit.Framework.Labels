@@ -1,0 +1,230 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BCB111FD-5432-4DFD-8FF8-F2422047C40F}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Zeroit.Framework.Labels</RootNamespace>
+    <AssemblyName>Zeroit.Framework.Labels</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+    <DocumentationFile>bin\Debug\Zeroit.Framework.Labels.xml</DocumentationFile>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <DocumentationFile>bin\Release\Zeroit.Framework.Labels.xml</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>ZeroitStrongKeys.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Accessibility" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AkotoHeader\Classes\EarAdornment.cs" />
+    <Compile Include="AkotoHeader\Classes\EarAdornmentTypeEditor.cs" />
+    <Compile Include="AkotoHeader\EarUIEditor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AkotoHeader\AkotoHeaderBase.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AkotoHeader\AkotoFooterControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AkotoHeader\AkotoHeaderControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AnimatedLabel\AnimatedLabel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DaasebreHeader\Designers.cs" />
+    <Compile Include="DaasebreHeader\Header.cs" />
+    <Compile Include="DaasebreHeader\NativeWrappers.cs" />
+    <Compile Include="DividerLabel\DividerLabel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DottedMatrix\ZeroitDottedMatrix.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DougScrollingText\DougScrollingText.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="FakeFlash\FF.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="FinneyLed\Finney.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ForRealAlignLabel\ForRealLabel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="GargantuanHeader\FormHeader.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="LedDisplay\LedMatrixControl.cs" />
+    <Compile Include="MultiColorLabels\TextFormat.cs" />
+    <Compile Include="MultiColorLabels\CustomText.cs" />
+    <Compile Include="MultiColorLabels\ExtendedPropertyChangedEvents.cs" />
+    <Compile Include="MultiColorLabels\MultiFormatLabel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MultiColorLabels\MultiFormatLabel.Designer.cs" />
+    <Compile Include="OrientedText\OrientedText.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PlaceholderTextBox\PlaceholderTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SantaLabel\SantaLabel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ScrollingText\FrontAndBack.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ScrollingText\ScrollingText.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SevenSegLed\About.cs" />
+    <Compile Include="SevenSegLed\SevenSegmentLEDDigits.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SevenSegment\7Segment.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ShadowLabel\ShadowLabel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Border Label\BorderLabel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Transparent Label\TransparentLabel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Transparent Label\TransparentText.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TrayBallon\TrayBalloon.cs" />
+    <Compile Include="TrayBallon\TrayBalloonFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TrayBallon\TrayBalloonFrm.Designer.cs" />
+    <Compile Include="UltraLabel\UltraRotate\PathPaint.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UltraLabel\UltraRotate\Workaround.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UltraLabel\UltraRotate\SmartTag.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UltraLabel\UltraRotate\Overrides.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UltraLabel\UltraRotate\Paint.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UltraLabel\UltraRotate\VarsAndProperties.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UltraLabel\UltraRotate\UltraRotate.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UltraLabel\UltraSmartTag.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UltraLabel\UltraLabel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UltraTextBox\UltraTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="VerticalLabel\VerticalLabel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="VerticallyArranged\VerticallyArranged.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <EmbeddedResource Include="FakeFlash\FF.resx">
+      <DependentUpon>FF.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GargantuanHeader\FormHeader.resx">
+      <DependentUpon>FormHeader.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Zeroit.Framework.Labels.nuspec" />
+    <None Include="ZeroitStrongKeys.snk" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="LedDisplay\LedIcon.ico" />
+    <Content Include="LedDisplay\LedMatrixSymbolFile.xml" />
+    <None Include="Resources\tray_ballon_background.bmp" />
+    <None Include="Resources\btnStair.Image.png" />
+    <None Include="Resources\btnSquare.Image.png" />
+    <None Include="Resources\btnSlant.Image.png" />
+    <None Include="Resources\btnRounded.Image.png" />
+    <None Include="Resources\btnRegular.Image.png" />
+    <None Include="Resources\btnOgee.Image.png" />
+    <None Include="Resources\btnLine.Image.png" />
+    <None Include="Resources\btnConcave.Image.png" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
